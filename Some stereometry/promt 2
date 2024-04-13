@@ -1,0 +1,26 @@
+# одразу видав робочий код
+
+import math
+
+def sphere_properties(r, h):
+    # Calculate the surface area of the sphere
+    sphere_surface_area = round(4 * math.pi * (r**2), 3)
+
+    # Calculate the radius of the circle formed by the intersection
+    circle_radius = math.sqrt(r**2 - h**2)
+
+    # Calculate the area of the circle
+    circle_area = round(math.pi * (circle_radius**2), 3)
+
+    # Calculate the perimeter of the circle
+    circle_perimeter = round(2 * math.pi * circle_radius, 3)
+
+    return sphere_surface_area, circle_area, circle_perimeter
+
+# Example usage:
+radius = 5
+distance = 3
+result = sphere_properties(radius, distance)
+print("Surface area of the sphere:", result[0])
+print("Area of the circle:", result[1])
+print("Perimeter of the circle:", result[2])
