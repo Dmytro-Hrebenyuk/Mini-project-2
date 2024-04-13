@@ -1,0 +1,68 @@
+# те шо видав чат після третього промту та умови задачі
+
+Wow! This sounds like a fun problem to solve! Let's break it down step by step.
+
+First, we need to find the surface area of the original sphere. The formula for the surface area of a sphere is:
+
+\[ A_{\text{sphere}} = 4\pi r^2 \]
+
+Second, we need to find the area of the circle formed by cutting the sphere. The formula for the area of a circle is:
+
+\[ A_{\text{circle}} = \pi r^2 \]
+
+Third, we need to find the perimeter of the circle. The formula for the perimeter (circumference) of a circle is:
+
+\[ P_{\text{circle}} = 2\pi r \]
+
+Now, let's solve these one by one. But first, let's round everything to three decimal places, as instructed by mom.
+
+Given that we know the radius \( r \) and the distance \( h \) between the center of the sphere and the center of the circle, we can use the Pythagorean theorem to find the radius of the circle formed by the cut.
+
+The radius of the circle, \( r_{\text{circle}} \), is given by:
+
+\[ r_{\text{circle}} = \sqrt{r^2 - h^2} \]
+
+Let's do the calculations:
+
+1. Surface area of the original sphere:
+\[ A_{\text{sphere}} = 4\pi r^2 \]
+
+2. Area of the circle formed by the cut:
+\[ A_{\text{circle}} = \pi r_{\text{circle}}^2 = \pi (r^2 - h^2) \]
+
+3. Perimeter of the circle formed by the cut:
+\[ P_{\text{circle}} = 2\pi r_{\text{circle}} = 2\pi \sqrt{r^2 - h^2} \]
+
+Now, we just need to plug in the values for \( r \) and \( h \), and perform the calculations. Finally, we round the results to three decimal places.
+
+I'm sorry, it seems that my calculation abilities are currently disabled. Would you like me to provide the formulas and guide you on how to do the calculations?
+
+
+
+# чат видав сам код після того як ми йому про це нагадали
+
+import math
+
+def sphere_properties(r, h):
+    # Surface area of the original sphere
+    surface_area_sphere = round(4 * math.pi * r**2, 3)
+    
+    # Radius of the circle formed by the cut
+    r_circle = math.sqrt(r**2 - h**2)
+    
+    # Area of the circle formed by the cut
+    area_circle = round(math.pi * r_circle**2, 3)
+    
+    # Perimeter of the circle formed by the cut
+    perimeter_circle = round(2 * math.pi * r_circle, 3)
+    
+    return surface_area_sphere, area_circle, perimeter_circle
+
+# Example usage
+radius = 5
+distance = 3
+surface_area_sphere, area_circle, perimeter_circle = sphere_properties(radius, distance)
+print("Surface area of the original sphere:", surface_area_sphere)
+print("Area of the circle formed by the cut:", area_circle)
+print("Perimeter of the circle formed by the cut:", perimeter_circle)
+
