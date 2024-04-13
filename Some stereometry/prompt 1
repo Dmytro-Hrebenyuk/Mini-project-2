@@ -1,0 +1,50 @@
+# перший(був вказаний перший промпт та умова задачі) та другий(після вказання того, який тест не проходить) згенеровані коди(вони одинакові)
+
+import math
+
+def sphere_and_circle_info(r, h):
+    # Surface area of the sphere
+    A_sphere = round(4 * math.pi * r**2, 3)
+    
+    # Area of the circle
+    A_circle = round(math.pi * ((r**2 - h**2) / r)**2, 3)
+    
+    # Perimeter of the circle
+    P_circle = round(2 * math.pi * math.sqrt(r**2 - h**2), 3)
+    
+    return A_sphere, A_circle, P_circle
+
+# Example usage:
+r = 5  # Radius of the sphere
+h = 3  # Distance between centers of sphere and circle
+
+sphere_area, circle_area, circle_perimeter = sphere_and_circle_info(r, h)
+print("Surface area of the original sphere:", sphere_area)
+print("Area of the circle:", circle_area)
+print("Perimeter of the circle:", circle_perimeter)
+
+
+# 3 код, який був згенерований після вказання конкретної помилки
+
+import math
+
+def sphere_and_circle_info(r, h):
+    # Surface area of the sphere
+    A_sphere = round(4 * math.pi * r**2, 3)
+    
+    # Area of the circle
+    A_circle = round(math.pi * (r**2 - h**2), 3)
+    
+    # Perimeter of the circle
+    P_circle = round(2 * math.pi * math.sqrt(r**2 - h**2), 3)
+    
+    return A_sphere, A_circle, P_circle
+
+# Example usage:
+r = 5  # Radius of the sphere
+h = 3  # Distance between centers of sphere and circle
+
+sphere_area, circle_area, circle_perimeter = sphere_and_circle_info(r, h)
+print("Surface area of the original sphere:", sphere_area)
+print("Area of the circle:", circle_area)
+print("Perimeter of the circle:", circle_perimeter)
