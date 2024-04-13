@@ -1,4 +1,4 @@
-def simulate_character_selection(fighters, initial_position, moves):
+def street_fighter_selection(fighters, initial_position, moves):
     # Define grid dimensions
     rows = len(fighters)
     cols = len(fighters[0])
